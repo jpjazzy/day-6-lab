@@ -140,7 +140,7 @@ var dispShop = function (shopObj) {
 
   //add label of shop to top
   var storeName = document.createElement('div');
-  storeName.innerHTML = '<p>' + shopObj.shopName + '</p>';
+  storeName.innerHTML = '<h1>' + shopObj.shopName + '</h1>';
   document.body.appendChild(storeName);
 
   var arrOfCookiesHTML = [];
@@ -165,9 +165,7 @@ var dispShop = function (shopObj) {
 
   //Stick new element on the page
   document.getElementById('test').appendChild(docData);
-  //var bodyContent = document.getElementById('test');
-  //bodyContent.innerHTML = docData;
-};
+} ;
 
 //Create array of our objects and display them
 var arrOfStores = [firstAndPike, seatacAirport, seattleCenter, capitolHill, alki];
